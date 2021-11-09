@@ -186,7 +186,8 @@ searchBar.addEventListener("keyup", function (e) {
         console.log(searchString);
        const filteredCharacters = globalTaskData.filter(function (character) {
          return (
-           character.title.toLowerCase().includes(searchString) 
+           character.title.toLowerCase().includes(searchString) ||
+           character.title.includes(searchString)
          );
        });
        filteredCharacters.map(function (cardData) {
