@@ -1,0 +1,12 @@
+.task__card {
+    cursor: pointer;
+  }
+  
+  .task__card:hover {
+    border: 1px solid #4582ec;
+  }
+  
+  .task__card:hover .task-card {
+    color: #4582ec;
+  }
+  
